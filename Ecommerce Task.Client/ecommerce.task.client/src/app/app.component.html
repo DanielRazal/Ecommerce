@@ -1,0 +1,50 @@
+<div class="flex">
+<div class="first-root">
+<div *ngFor="let first of sites;" class="first-root-one-gen">
+  <div *ngIf="first.id <= 7">
+  <div>Id: {{first.id}}</div>
+  <div>Site Name: {{first.name}}</div>
+  <div>Site Url: <a href="{{first.url}}">{{first.url}}</a></div>
+  <div *ngFor="let second of first.subData;" class="first-root-two-gen-1">
+    <div *ngIf="second.id <= 7" class="first-root-two-gen-2">
+      <div>Id: {{second.id}}</div>
+      <div>Site Name: {{second.name}}</div>
+      <div>Site Url: <a href="{{second.url}}">{{second.url}}</a></div>
+    </div>
+    <div *ngFor="let third of second.subData;">
+      <div *ngIf="third.id <= 7" class="first-root-three-gen">
+        <div class="space">Id: {{third.id}}</div>
+        <div class="space">Site Name: {{third.name}}</div>
+        <div class="space">Site Url: <a href="{{third.url}}">{{third.url}}</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="second-root">
+  <div *ngFor="let first of sites;" class="space">
+    <div *ngIf="first.id > 7"
+       [ngClass]="{'second-root-one-gen': first.id === 21 || first.id === 10 || first.id == 17}">
+    <div class="space">Id: {{first.id}}</div>
+    <div class="space">Site Name: {{first.name}}</div>
+    <div class="space">Site Url: <a href="{{first.url}}">{{first.url}}</a></div>
+    <div *ngFor="let second of first.subData;" class="second-root-two-gen-1" [ngClass]="{'second-root-two-gen-2': second.id === 9}">
+      <div *ngIf="second.id > 7" class="space">
+        <div>Id: {{second.id}}</div>
+        <div>Site Name: {{second.name}}</div>
+        <div>Site Url: <a href="{{second.url}}">{{second.url}}</a></div>
+      </div>
+      <div *ngFor="let third of second.subData;">
+        <div *ngIf="third.id > 7" class="second-root-three-gen">
+          <div class="space" >Id: {{third.id}}</div>
+          <div class="space">Site Name: {{third.name}}</div>
+          <div class="space">Site Url: <a href="{{third.url}}">{{third.url}}</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>

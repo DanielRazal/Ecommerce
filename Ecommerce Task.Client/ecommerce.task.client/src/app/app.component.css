@@ -1,0 +1,63 @@
+.first-root, .second-root{
+  margin-top: 10%;
+  margin-left: 30%;
+  border: solid green 3px;
+  background-color: aliceblue;
+  width: 25%;
+  border-radius: 5%;
+  height: 470px;
+  margin-top: 0%;
+}
+
+.second-root-two-gen-1{
+  background-color: gray;
+  border: solid green 3px;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.second-root{
+  margin-left: 5%;
+  height: 940px;
+}
+
+.first-root-two-gen-1 , .second-root-one-gen,.second-root-two-gen-2{
+  border: solid green 3px;
+  background-color: aqua;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 5%;
+}
+.second-root-one-gen,.second-root-two-gen-2{
+  margin-left: 10%;
+}
+
+.first-root-three-gen{
+  border: solid green 3px;
+  background-color: gray;
+  margin-left: 12%;
+  border-radius: 5%;
+  width: 85%;
+  margin-top: 3%;
+}
+
+a{
+  color: blue;
+  text-decoration: none;
+}
+
+.first-root-one-gen,.space, .first-root-two-gen-2{
+  margin-left: 3%;
+}
+
+.flex{
+  display: flex;
+}
+.second-root-three-gen{
+  background-color: orange;
+  margin-top: 3%;
+  margin-left: 8%;
+  border-radius: 5%;
+  border: solid green 3px;
+}
+
